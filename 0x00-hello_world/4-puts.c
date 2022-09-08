@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * this program prings a set of strings and
- * returns 0
+ * return: 0
  */
 int main(void)
 {
