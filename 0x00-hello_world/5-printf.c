@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main: print the sting in the printf function
+ * main - print the sting in the printf function
  *
  * Description: using the main function
  * Return: 0
