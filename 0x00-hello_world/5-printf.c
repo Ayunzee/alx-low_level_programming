@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main: Entry point
- * Description: prints using the main
+ * main: print the sting in the printf function
+ *
+ * Description: using the main function
  * Return: 0
  */
 int main(void)
