@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - the entry point to the program
- * this program prings a set of strings and 
+ * main - Entry point
+ * this program prings a set of strings and
  * returns 0
  */
 int main(void)
