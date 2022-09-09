@@ -12,12 +12,9 @@ int n;
 for (n = '0' ; n <= '9' ; n++)
 {
 	putchar(n);
+	putchar(',');
+	putchar(' ');
 }
-for (n = '9' ; n >= '0' ; n--)
-{
-	putchar(n);
-}
-putchar(',');
 putchar('\n');
 return (0);
 }
