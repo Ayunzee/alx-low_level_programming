@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - function to print abc and new line
- *
+ * _islower - checks the lowercases
+ *@c: the int that uses the argument of the function
  * Return: 0
  */
 int _islower(int c)
