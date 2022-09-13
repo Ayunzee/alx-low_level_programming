@@ -1,12 +1,17 @@
-#include <unistd.h>
+#include "main.h"
 /**
- * _putchar - this whrites the character c to standard output
- * @c: the charceter to be printed
- *
- * Return:(1) 0n success.
- * on error, -1 is returned, and erreo is set approximately.
+ * main - prints putchar
+ * Return: always 0
  */
-int _putchar(char c)
+int main(void)
 {
-return (write(1, &c, 1));
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+return (0);
 }
