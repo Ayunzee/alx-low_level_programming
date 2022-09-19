@@ -18,3 +18,19 @@ void rev_string(char *s)
 		*(s + lent - i - 1) = temp;
 	}
 }
+
+/**
+ * _strlen - returns the length
+ * @s: strings
+ *
+ * Return: the length
+ */
+
+int _strlen(char *s)
+{
+	int lent = 0;
+
+	while (*(s + lent) != '\0')
+		lent++;
+	return (lent);
+}
