@@ -13,8 +13,13 @@
 
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest, src);
-	printf("%s\n", dest);
+	int now = 0, big =0;
 
-	return (0);
+		while (dest[now++])
+			big++;
+		
+		for (now = 0; src[now]; now++)
+			dest[big++] = src[now];
+
+		return (dest);
 }
