@@ -11,34 +11,30 @@
 
 int main(int argc, char *argv[])
 {
-int cents, coins = 0;
-
-if (argc != 2)
-{
-	printf("Error\n");
-	return (1);
-}
-cents = atoi(argv[1]);
-while (cents > 0)
-{
-	coins++;
-	if ((cents - 25) >= 0)
+	int a, n = 0, i, t;
+	int c[5] = {25, 10, 5, 2, 1};
+		if (argc != 2)
 	{
-		cents -= 25;
-		continue;
+		puts("Error");
+		return (1);
 	}
-	if ((cents - 5) >= 0)
+	a = atoi(argv[1]);
+	if (a <= 0)
 	{
-		cents -= 5;
-		continue;
+		puts("0");
+		return (1);
 	}
-	if ((cents - 2) >= 0)
+	else
 	{
-		cents -= 2;
-		continue;
+		for (i = 0; i < 5; i++)
+		{
+			t = a / c[i];
+			a -= t * c[i];
+			n += t;
+			if (a == 0)
+				break;
+		}
 	}
-	cents--;
-}
-printf("%d\n", coins);
-return (0);
+	printf("%d\n", n);
+	return (0);
 }
