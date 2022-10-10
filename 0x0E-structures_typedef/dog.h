@@ -1,28 +1,21 @@
-#include <stdio.h>
+#ifndef DOG_H_FILE
+#define DOG_H_FILE
 
 /**
  * struct dog - the struct defined
  * @name: name entered
  * @age: age of thr struct
  * @owner: owner of the struct
- *
- * Description: defines dog as a structure
  */
-
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 
-/**
- * main - entry point
- *
- * Return: 0
- */
-
-int main(void)
-{
-	return (0);
-}
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+#endif
