@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * new_dog: creates a new struct
+ * new_dog - creates a new struct
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
